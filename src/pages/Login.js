@@ -37,7 +37,7 @@ const Login = () => {
 
     function handleSubmit(e) {
         e.preventDefault()
-        postRequest(`h${API_BASE_URL}/april/jwt/api/login`, {email, password})
+        postRequest(`${API_BASE_URL}/april/jwt/api/login`, {email, password})
 
         //Hit API Authentication Endpoint
     }
