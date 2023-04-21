@@ -47,7 +47,7 @@ const Account = () => {
     })
 
     return (
-        <section className="flex">
+        <section className="flex sm:flex-row flex-col">
             <div className="p-10">
                 <div>Your Personal Account</div>
                 <button onClick={handleLogout} className="bg-blue-500 text-white font-semibold py-2 px-4 rounded shadow hover:bg-blue-600 active:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition duration-150 ease-in-out my-4">Log Out</button>

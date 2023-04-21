@@ -50,7 +50,7 @@ const Signup = () => {
 
 
     return (
-        <section className="flex flex-col w-[fit-content] h-[fit-content] p-10 mx-auto my-10">
+        <section className="flex flex-col w-96 w-[fit-content] h-[fit-content] p-10 mx-auto my-10">
             <h2 className="text-3xl font-bold text-slate-600 mb-10">Join Us...</h2>
             <form onSubmit={handleSubmit}>
                 <div className="flex space-x-4 my-4">

@@ -44,7 +44,7 @@ const Login = () => {
 
 
     return (
-        <section className="border-[1px] w-96 h-[fit-content] shadow-lg mx-auto my-20">
+        <section className="border-[1px] max-w-[350px] h-[fit-content] shadow-lg mx-auto my-20">
             <form className="h-full w-full text-center my-10" onSubmit={handleSubmit}>
                 <div className="inline-flex flex-col justify-center items-start h-full gap-4">
                     <div>
