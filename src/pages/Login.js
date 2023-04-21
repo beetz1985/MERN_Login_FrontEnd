@@ -4,6 +4,8 @@ import usePostRequest from '../hooks/usePostRequest'
 import { AuthorityContext } from '../contexts/AuthorityContext'
 import { useNavigate } from 'react-router-dom'
 
+import { API_BASE_URL } from '../util/constants'
+
 const Login = () => {
 
     const {saveToken} = useContext(AuthorityContext)
@@ -35,7 +37,7 @@ const Login = () => {
 
     function handleSubmit(e) {
         e.preventDefault()
-        postRequest('http://localhost:5000/april/jwt/api/login', {email, password})
+        postRequest(`h${API_BASE_URL}/april/jwt/api/login`, {email, password})
 
         //Hit API Authentication Endpoint
     }

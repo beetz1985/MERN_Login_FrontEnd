@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from 'react'
 import { AuthorityContext } from '../contexts/AuthorityContext'
 import usePostRequest from '../hooks/usePostRequest'
 import { useNavigate } from 'react-router-dom'
+import { API_BASE_URL } from '../util/constants'
 
 const Signup = () => {
 
@@ -38,7 +39,7 @@ const Signup = () => {
 
     function handleSubmit(e) {
         e.preventDefault()
-        postRequest('http://localhost:5000/april/jwt/api/register', {email, password})
+        postRequest(`${API_BASE_URL}/april/jwt/api/register`, {email, password})
     }
 
     function handleClear(e) {
